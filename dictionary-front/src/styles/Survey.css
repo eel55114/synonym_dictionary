@@ -1,0 +1,142 @@
+/* ───────── 컨테이너 & 카드 ───────── */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+.survey-card {
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ───────── 단어/의미 레이블 & 텍스트영역 ───────── */
+.word-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.word-meaning {
+  margin-top: 8px;
+  width: 100%;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* ───────── 질문 텍스트 ───────── */
+.survey-question {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 24px 0 16px 0;
+}
+
+/* ───────── 9-점 척도 버튼 컨테이너 ───────── */
+.scale-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ───────── 각 척도 버튼 ───────── */
+.scale-button {
+  width: 24px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.scale-button:disabled {
+  background-color: #e0e0e0 !important;
+  cursor: not-allowed;
+}
+
+/* 중앙(5번째) 버튼만 너비를 70px로 설정 */
+.scale-button.b4 {
+  width: 70px;
+}
+
+/* 선택된(클릭된) 상태 */
+.scale-button.selected {
+  transform: scale(1.1);
+  outline: 3px solid #333;
+}
+
+/* ───────── 선택 레이블 ───────── */
+.selection-label {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* ───────── 네비게이션 & 제출 버튼 ───────── */
+.nav-btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.sense-code {
+  margin-top: 8px;
+  width: 100%;
+  resize: none;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding-right: 50px;
+  padding: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.sense-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-meaning-btn {
+  font-size: 16px;
+  padding: 4px 8px;
+  margin-left: 5px;
+  border-radius: 8px;
+  width: 70px;
+  background-color: #77a1d0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

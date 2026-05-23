@@ -1,0 +1,320 @@
+.word-detail-page {
+  background-color: #edf1fd;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-button-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 20px;
+}
+
+.feedback-button,
+.back-button {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.detail-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.word-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.word-block {
+  max-width: 1500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.word-header h1 {
+  font-size: 33px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.original-language {
+  font-size: 20px;
+  color: #555;
+}
+
+.pronunciation {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.pos-label {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.sense-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sense-item {
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sense-def-container {
+  display: flex;
+}
+
+.sense-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sense-numbered {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.lexical-info-preview {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lexical-info-block {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button {
+  padding: 5px 10px;
+  background-color: #cee4f7;
+  color: black;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button:hover {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #2196f3;
+  transform: scale(1.05);
+}
+
+.expanded-lexical-info {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 5px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.table-header span {
+  flex: 1;
+  text-align: center;
+}
+
+.lexical-info-table {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.lexical-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.relevance {
+  flex: 0 0 15%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+  border-radius: 50px;
+}
+
+.relevance.high {
+  background-color: #a8e6cf;
+}
+
+.relevance.medium {
+  background-color: #fff5a5;
+}
+
+.relevance.low {
+  background-color: #d3d3d3;
+}
+
+.relation-type {
+  flex: 1 1 35%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.lexical-word {
+  flex: 2 1 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.separator {
+  width: 1px;
+  background-color: #ccc;
+}
+
+.pagination-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-buttons button {
+  padding: 3px 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  background-color: #1769aa;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.red-circle {
+  background-color: #ff4d4d;
+}
+
+.blue-circle {
+  background-color: #4da6ff;
+}
+.pattern-text {
+  color: #ffc93c; 
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+
+.sort-button-container {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort-button {
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sort-button:hover {
+  background-color: #1769aa;
+}
